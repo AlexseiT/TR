@@ -769,9 +769,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (isTablet) {
         InitBurgerMenu();
     }
-    if (!isCustomTablet) {
-        //TippyRussiaCityInit();
-        //TippyChinaCityInit();
+    if (isCustomTablet2) {
+        initActiveGreenSlide();
     }
     if (!isCustomTablet2) {
         DeleteActiveSlides();

@@ -318,7 +318,7 @@ textarea:focus-visible {
 
 .text {
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -1332,6 +1332,7 @@ textarea:focus-visible {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border: 1px solid #FFFFFF;
+    text-align: center;
 }
 
 .map__sity:hover {
@@ -1740,7 +1741,7 @@ textarea:focus-visible {
 
     .text {
         color: #000000;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-weight: 400;
     }
 

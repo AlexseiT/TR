@@ -1333,6 +1333,7 @@ textarea:focus-visible {
     transition: 0.3s;
     border: 1px solid #FFFFFF;
     text-align: center;
+    box-shadow: 2px 4px 10px #00000011;
 }
 
 .map__sity:hover {

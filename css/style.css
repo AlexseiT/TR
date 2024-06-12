@@ -1291,6 +1291,12 @@ textarea:focus-visible {
     transition: 0.3s;
     border: 1px solid #FFFFFF;
     text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2784313725);
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2784313725);
 }
@@ -1950,6 +1956,12 @@ textarea:focus-visible {
         justify-content: left;
     }
 
+    .map__sity {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
     .map__title-block {
         padding-top: 20px;
     }
@@ -1976,11 +1988,19 @@ textarea:focus-visible {
     }
 
     .map__wrapper-link {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        /*
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;*/
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         gap: 15px;
+        width: 100%;
+        overflow-x: scroll;
+        padding-bottom: 14px;
+        padding-left: 7px;
+        padding-right: 7px;
     }
 
     .map__title-block {

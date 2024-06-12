@@ -318,7 +318,7 @@ textarea:focus-visible {
 
 .text {
     color: #000000;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -932,27 +932,6 @@ textarea:focus-visible {
 }
 
 @-webkit-keyframes swing {
-
-    /* 0%
-   {
-       transform: translateX(0) rotate(0);  
-   }
-   25%
-   {
-       transform: translateX(-50px) rotate(10deg);  
-   }
-   50%
-   {
-       transform: translateX(0) rotate(0);  
-   }
-   75%
-   {
-       transform: translateX(50px) rotate(-10deg);  
-   }
-   100%
-   {
-       transform: translateX(0) rotate(0);  
-   }*/
     0% {
         -webkit-transform: translateX(-30px) rotate(2deg);
         transform: translateX(-30px) rotate(2deg);
@@ -970,27 +949,6 @@ textarea:focus-visible {
 }
 
 @keyframes swing {
-
-    /* 0%
-   {
-       transform: translateX(0) rotate(0);  
-   }
-   25%
-   {
-       transform: translateX(-50px) rotate(10deg);  
-   }
-   50%
-   {
-       transform: translateX(0) rotate(0);  
-   }
-   75%
-   {
-       transform: translateX(50px) rotate(-10deg);  
-   }
-   100%
-   {
-       transform: translateX(0) rotate(0);  
-   }*/
     0% {
         -webkit-transform: translateX(-30px) rotate(2deg);
         transform: translateX(-30px) rotate(2deg);
@@ -1333,7 +1291,16 @@ textarea:focus-visible {
     transition: 0.3s;
     border: 1px solid #FFFFFF;
     text-align: center;
-    box-shadow: 2px 4px 10px #00000047;
+    -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2784313725);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2784313725);
+}
+
+.map__sity.text_small {
+    font-weight: 600;
+}
+
+.map__sity.text_min {
+    font-weight: 500;
 }
 
 .map__sity:hover {
@@ -1501,6 +1468,7 @@ textarea:focus-visible {
     background-color: #F2F2F2;
     border-radius: 23px;
     position: absolute;
+    cursor: default;
 }
 
 .clients__card_dark {
@@ -1689,6 +1657,13 @@ textarea:focus-visible {
     opacity: 1;
     pointer-events: inherit;
     cursor: pointer;
+}
+
+.footer__block_min-gap {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    gap: 40px;
 }
 
 @media (max-width: 1440.98px) {
@@ -1948,7 +1923,9 @@ textarea:focus-visible {
     }
 
     .hero__object-container {
-        display: none;
+        /*display: none;*/
+        top: 324px;
+        right: -20px;
     }
 
     .infograph__block-img {

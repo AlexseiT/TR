@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="static/uikit-3.16.24.min.css?_v=20240613134046">
+    <link rel="stylesheet" href="css/style.css?_v=20240613134046">
+
+    <title>SITE</title>
+</head>
+
+<body>
+    <header class="header" uk-sticky="media: (max-width: 768px)">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="/" class="link header__logo-wrapper"><img src="images/icons/logo.svg" class="header__logo-icon" alt="Trans inovation"></a>
+                <span class="header__time-text text_mini">г. Новосибирск<br>Пн-Пт 08:00 - 18:00</span>
+            </div>
+            <div class="header__menu">
+                <ul class="text_min header__menu-list">
+                    <li class="link header__menu-link"><a href="#">Главная</a></li>
+                    <li class="link header__menu-link"><a href="#">О компании</a></li>
+                    <li class="link header__menu-link"><a href="#">Услуги</a></li>
+                    <li class="link header__menu-link"><a href="#">Тарифы</a></li>
+                    <li class="link header__menu-link"><a href="#">Справочники</a></li>
+                    <li class="link header__menu-link"><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="text_min header__buttons">
+                <a href="tel:+78001012832" class="button header__button">8 (800) 101-28-32</a>
+                <a class="button header__button header__button_accent" uk-toggle="target: #formRequest">Оставить заявку</a>
+                <a href="https://aflk.coralway.ru/cabinet/ru_RU/" class="button header__button header__button_icon"><img src="images/icons/exit.svg" class="header__button-icon" alt=""></a>
+                <a href="#header__burger-menu" class="header__burger-button" uk-toggle>
+                    <div class="header__burger-line"></div>
+                    <div class="header__burger-line"></div>
+                    <div class="header__burger-line"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="header__burger-menu" class="header__menu burger__menu" uk-modal-full uk-modal>
+        <ul class="text_min header__menu-list burger__menu-list">
+            <li class="link header__menu-link"><a href="#">Главная</a></li>
+            <li class="link header__menu-link"><a href="#">О компании</a></li>
+            <li class="link header__menu-link"><a href="#">Услуги</a></li>
+            <li class="link header__menu-link"><a href="#">Тарифы</a></li>
+            <li class="link header__menu-link"><a href="#">Справочники</a></li>
+            <li class="link header__menu-link"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="text_min header__burger-menu-column">
+            <a href="tel:+78001012832" class="button header__button mobile">8 (800) 101-28-32</a>
+            <a class="button header__button header__button_accent mobile" uk-toggle="target: #formRequest">Оставить заявку</a>
+            <span class="mobile header__time-text text_mini">г. Новосибирск<br>Пн-Пт 08:00 - 17:00</span>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="transportation-block">
+            <div class="container transportation-block__container">
+
+                <div class="transportation-block__hero">
+                    <div class="transportation-block__wrapper"><img class="transportation-block__img" src="images/hero-transport.jpg" uk-scrollspy="cls: uk-animation-kenburns; repeat: true"></div>
+                    <div class="transportation-block__hero-content">
+                        <h1 class="text_head transportation-block__title">Контейнерные перевозки<br>по России ж/д и авто</h1>
+                        <a href="#" class="button button__accent text_small transportation-block__hero-button">Расчитать стоимость</a>
+                    </div>
+                </div>
+
+                <div class="transportation-block__content">
+                    <span class="text_standart transportation-block__content-text">
+                        Для клиентов, нуждающихся в быстрой доставке груза, мы предлагаем железнодорожные контейнерные перевозки, известные своей надежностью и безопасностью. Наша компания имеет партнерские отношения с ведущими железнодорожными перевозчиками, что позволяет нам обеспечить оперативную доставку грузов по всей России.<br><br>
+                        Для гибкости и удобства наших клиентов, мы также предлагаем автомобильные контейнерные перевозки. Наша собственная автомобильная флотилия и партнерские перевозчики гарантируют быструю и качественную доставку грузов до места назначения.<br><br>
+                        Наш опытный и профессиональный коллектив сделает все возможное, чтобы ваш груз был перевезен точно в срок и в сохранности. Обращаясь к нам, вы можете быть уверены в надежности и профессионализме наших услуг контейнерных перевозок по России.
+                    </span>
+                </div>
+
+            </div>
+        </section>
+        <section class="section transportation-infograph">
+            <div class="container transportation-infograph__container">
+
+                <div class="section__head transportation-infograph__title-block">
+                    <h2 class="text_head section__title">Этапы работ контейнерных <br>перевозок</h2>
+                </div>
+
+                <div class="transportation-infograph__content transportation-infograph__content_default">
+                    <div class="transportation-infograph__column">
+                        <div class="reveal transportation-infograph__card reveal1">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">1</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Планирование и подготовка:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Заключение договора: Оформление контрактов между отправителем, перевозчиком и получателем.</li>
+                                    <li>Разработка маршрута: Определение оптимального маршрута доставки с учетом всех возможных рисков и ограничений.</li>
+                                    <li>Выбор контейнера: Подбор соответствующего типа и размера контейнера в зависимости от характеристик груза.</li>
+                                    <li>Документальное оформление: Подготовка всех необходимых документов, включая накладные, счета и сертификаты.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="reveal transportation-infograph__card reveal1">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">3</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Погрузка контейнера:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Доставка пустого контейнера на склад отправителя.</li>
+                                    <li>Загрузка груза в контейнер: Правильная укладка и закрепление груза внутри контейнера для обеспечения его стабильности.</li>
+                                    <li>Закрытие и опечатывание контейнера: Запечатывание контейнера пломбами для предотвращения несанкционированного доступа.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="reveal transportation-infograph__card reveal1">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">5</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Таможенные процедуры:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Оформление документов: Прохождение всех таможенных формальностей, включая проверку документов и оплату пошлин.</li>
+                                    <li>Таможенная очистка: Осмотр и проверка груза таможенными органами.</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="transportation-infograph__column">
+                        <div class="reveal transportation-infograph__card reveal2">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">2</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Предварительная обработка груза:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Упаковка: Надежная упаковка груза для предотвращения повреждений во время транспортировки.</li>
+                                    <li>Маркировка: Нанесение необходимых меток и идентификаторов на груз и контейнер.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="reveal transportation-infograph__card reveal2">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">4</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Транспортировка:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Доставка контейнера в порт отправления: Перевозка контейнера на грузовом автомобиле или по железной дороге.</li>
+                                    <li>Погрузка на судно: Перемещение контейнера на борт судна с помощью кранов.</li>
+                                    <li>Выгрузка с судна: Разгрузка контейнера в порту назначения.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="reveal transportation-infograph__card reveal2">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">6</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Доставка до получателя:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Перемещение контейнера из порта назначения: Транспортировка контейнера на склад получателя на грузовом автомобиле или по железной дороге.</li>
+                                    <li>Разгрузка контейнера: Выгрузка груза из контейнера на складе получателя.</li>
+                                    <li>Возврат пустого контейнера: Возврат пустого контейнера в порт или на склад контейнерного оператора.</li>
+                                    <li>Закрытие документации: Завершение всех документальных формальностей и оформление отчетности.</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transportation-infograph__content transportation-infograph__content_mobile">
+                    <div class="transportation-infograph__column">
+                        <div class="reveal transportation-infograph__card reveal1">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">1</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Планирование и подготовка:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Заключение договора: Оформление контрактов между отправителем, перевозчиком и получателем.</li>
+                                    <li>Разработка маршрута: Определение оптимального маршрута доставки с учетом всех возможных рисков и ограничений.</li>
+                                    <li>Выбор контейнера: Подбор соответствующего типа и размера контейнера в зависимости от характеристик груза.</li>
+                                    <li>Документальное оформление: Подготовка всех необходимых документов, включая накладные, счета и сертификаты.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="reveal transportation-infograph__card reveal1">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">2</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Предварительная обработка груза:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Упаковка: Надежная упаковка груза для предотвращения повреждений во время транспортировки.</li>
+                                    <li>Маркировка: Нанесение необходимых меток и идентификаторов на груз и контейнер.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="reveal transportation-infograph__card reveal1">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">3</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Погрузка контейнера:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Доставка пустого контейнера на склад отправителя.</li>
+                                    <li>Загрузка груза в контейнер: Правильная укладка и закрепление груза внутри контейнера для обеспечения его стабильности.</li>
+                                    <li>Закрытие и опечатывание контейнера: Запечатывание контейнера пломбами для предотвращения несанкционированного доступа.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="reveal transportation-infograph__card reveal1">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">4</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Транспортировка:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Доставка контейнера в порт отправления: Перевозка контейнера на грузовом автомобиле или по железной дороге.</li>
+                                    <li>Погрузка на судно: Перемещение контейнера на борт судна с помощью кранов.</li>
+                                    <li>Выгрузка с судна: Разгрузка контейнера в порту назначения.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="reveal transportation-infograph__card reveal1">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">5</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Таможенные процедуры:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Оформление документов: Прохождение всех таможенных формальностей, включая проверку документов и оплату пошлин.</li>
+                                    <li>Таможенная очистка: Осмотр и проверка груза таможенными органами.</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="reveal transportation-infograph__card reveal1">
+                            <div class="transportation-infograph__number"><span class="text_head transportation-infograph__number-text">6</span></div>
+                            <h3 class="text_standart transportation-infograph__card-title">Доставка до получателя:</h3>
+                            <span class="text_min transportation-infograph__card-text">
+                                <ul>
+                                    <li>Перемещение контейнера из порта назначения: Транспортировка контейнера на склад получателя на грузовом автомобиле или по железной дороге.</li>
+                                    <li>Разгрузка контейнера: Выгрузка груза из контейнера на складе получателя.</li>
+                                    <li>Возврат пустого контейнера: Возврат пустого контейнера в порт или на склад контейнерного оператора.</li>
+                                    <li>Закрытие документации: Завершение всех документальных формальностей и оформление отчетности.</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section footer">
+        <div class="footer__up">
+            <div class="container footer__container">
+                <div class="text_head footer__head">Контакты</div>
+                <div class="footer__block">
+
+                    <div class="text_min footer__column">
+                        <span class="footer__column-title">ОФИС Новосибирск</span>
+                        <div class="footer__column-content">
+                            <span class="footer__column-text">Новосибирск - 630049, <br>РФ, город Новосибирск, <br>ул. Дуси Ковальчук, д. 274 <br>Телефон: 8 (800) 101-28-32;</span>
+                        </div>
+                        <span class="footer__column-title">ОФИС МОСКВА</span>
+                        <div class="footer__column-content">
+                            <span class="footer__column-text">Москва – 117405, <br>РФ, г. Москва, <br>ул. Дорожная, д. 60 <br>Телефон: 8 (985) 719-79-80;</span>
+                        </div>
+                        <span class="footer__column-title">ГРАФИК РАБОТЫ</span>
+                        <div class="footer__column-content">
+                            <span class="footer__column-text">Пн-Пт 08:00 - 18:00 <br>Сб-Вс - Выходной</span>
+                        </div>
+                    </div>
+
+                    <div class="text_min footer__column">
+                        <span class="footer__column-title">МЕНЮ</span>
+                        <div class="footer__column-content">
+                            <a href="#" class="footer__column-text footer__column-link">ГЛАВНАЯ</a>
+                            <a href="#" class="footer__column-text footer__column-link">О КОМПАНИИ</a>
+                            <a href="#" class="footer__column-text footer__column-link">УСЛУГИ</a>
+                            <a href="#" class="footer__column-text footer__column-link">ТАРИФЫ</a>
+                            <a href="#" class="footer__column-text footer__column-link">СПРАВОЧНИК</a>
+                            <a href="#" class="footer__column-text footer__column-link">КОНТАКТЫ</a>
+                        </div>
+                    </div>
+
+                    <div class="text_min footer__column">
+                        <span class="footer__column-title">УСЛУГИ</span>
+                        <div class="footer__column-content">
+                            <a href="#" class="footer__column-text footer__column-link">перевозка опасных грузов</a>
+                            <a href="#" class="footer__column-text footer__column-link">ЖД перевозки</a>
+                            <a href="#" class="footer__column-text footer__column-link">АВТОперевозки</a>
+                            <a href="#" class="footer__column-text footer__column-link">перевозка сыпучих <br>грузов</a>
+                        </div>
+                    </div>
+
+                    <div class="text_min footer__column">
+                        <span class="footer__column-title">Справочники</span>
+                        <div class="footer__column-content">
+                            <a href="#" class="footer__column-text footer__column-link">ЖЕЛЕЗНОДОРОЖНЫЕ ГРУЗЫ ЕТСНГ</a>
+                            <a href="#" class="footer__column-text footer__column-link">ЖЕЛЕЗНОДОРОЖНЫЕ ГРУЗЫ ГНГ</a>
+                            <a href="#" class="footer__column-text footer__column-link">ЖЕЛЕЗНОДОРОЖНЫЕ СТАНЦИИ</a>
+                            <a href="#" class="footer__column-text footer__column-link">РАСЧЕТ РАССТОЯНИЯ МАРШРУТА</a>
+                            <a href="#" class="footer__column-text footer__column-link">Характеристики контейнеров</a>
+                            <a href="#" class="footer__column-text footer__column-link">КАРТЫ ЖЕЛЕЗНЫХ ДОРОГ</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="text_standart footer__email-text">info@transinn.ru</a>
+            </div>
+        </div>
+        <div class="footer__down">
+            <div class="text_standart container footer__container footer__down-container">
+                <a href="/" class="link header__logo-wrapper footer__logo-wrapper"><img src="images/icons/logo.svg" class="header__logo-icon" alt="Trans inovation"></a>
+                <a href="#" class="footer__down-text">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                <div class="footer__delevoper">
+                    <span class="footer__down-text">разработка сайта:</span>
+                    <a href="#" class="footer__down-text footer__down-text_accent">dma group</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__button-top"><img class="footer__button-top-img" src="images/icons/up-top.svg"></div>
+    </footer>
+
+    <div id="formRequest" class="modal-request uk-flex-top" uk-modal>
+        <div class="uk-margin-auto-vertical uk-modal-body uk-modal-dialog">
+            <h2 class="text_large uk-modal-title">Оставить заявку</h2>
+            <button class="button button__accent text_small uk-modal-close" type="button">x</button>
+            <form class="modal-form">
+                <input type="text" name="name" class="text_small modal-form__input" placeholder="Имя" required>
+                <input type="tel" name="phone" class="text_small modal-form__input" placeholder="+7 999 999 99-99" required>
+                <button type="submit" class="button button__accent text_small button-form" uk-toggle="target: #formRequest">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- UIkit JS -->
+    <script src="static/uikit-3.16.24.min.js?_v=20240613134046"></script>
+    <script src="static/uikit-icons-3.16.24.min.js?_v=20240613134046"></script>
+
+    <!-- Anime JS -->
+    <script src="js/anime.js?_v=20240613134046"></script>
+
+
+    <!-- Imask JS -->
+    <script src="static/imask-7.5.0.min.js?_v=20240613134046"></script>
+
+    <!-- Tippy JS -->
+    <script src="https://unpkg.com/@popperjs/core@2?_v=20240613134046"></script>
+    <script src="https://unpkg.com/tippy.js@6?_v=20240613134046"></script>
+    <!-- Particles JS -->
+    <script src="js/TweenMax.js?_v=20240613134046" type="module"></script>
+    <!-- Particles JS -->
+    <script src="static/particles.min.js?_v=20240613134046"></script>
+    <script src="js/app.js?_v=20240613134046" type="module"></script>
+</body>
+
+</html>

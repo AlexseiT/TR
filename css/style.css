@@ -197,6 +197,7 @@ body {
 
 html {
     font-size: 12px;
+    zoom: 85%;
 }
 
 body {
@@ -309,7 +310,7 @@ textarea:focus-visible {
 
 .container_right {
     margin: 0px 0px 0px auto;
-    max-width: 1600px;
+    max-width: 1800px;
 }
 
 .section-title {
@@ -935,7 +936,7 @@ textarea:focus-visible {
 .hero {
     background: url(../images/hero1.jpg) no-repeat 45% 50%;
     background-size: cover !important;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     margin-top: 0px;
 }
@@ -1834,6 +1835,41 @@ textarea:focus-visible {
     padding-top: 8px;
 }
 
+.block-404 {
+    height: 600px;
+    margin-top: 180px;
+}
+
+.block-404__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.block-404__title {
+    color: #3F9755;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.block-404__text {
+    color: #000000;
+}
+
+.block-404__text_accent {
+    color: #3F9755;
+}
+
 @media (max-width: 1440.98px) {
     .text_min {
         font-size: 1.1rem;
@@ -1879,6 +1915,10 @@ textarea:focus-visible {
 }
 
 @media (max-width: 1200.98px) {
+    html {
+        zoom: inherit;
+    }
+
     .section {
         margin-top: 65px;
     }
@@ -1955,6 +1995,10 @@ textarea:focus-visible {
     .header__logo-wrapper {
         width: 50px;
         height: 50px;
+    }
+
+    .hero {
+        height: 100vh;
     }
 
     .hero__container {
@@ -2047,6 +2091,16 @@ textarea:focus-visible {
 
     .transportation-block__hero {
         height: 500px;
+    }
+
+    .block-404 {
+        height: 400px;
+        margin-top: 120px;
+    }
+
+    .block-404__title {
+        color: #3F9755;
+        margin-bottom: 20px;
     }
 }
 
@@ -2331,6 +2385,10 @@ textarea:focus-visible {
 
     .transportation-infograph__card-title {
         margin-top: 20px;
+    }
+
+    .block-404 {
+        margin-top: 30px;
     }
 }
 

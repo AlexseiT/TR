@@ -309,7 +309,7 @@ textarea:focus-visible {
 }
 
 .container_right {
-    margin: 0px 0px 0px auto;
+    /*margin: 0px 0px 0px auto;*/
     max-width: 1800px;
 }
 

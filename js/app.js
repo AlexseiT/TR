@@ -422,12 +422,17 @@ function LinckMapInit() {
             let coordinateY = (obj.getAttribute('cy') * coeffY);
             if (objLink.classList.contains("map__sityRussia") && objLink.id != "circle_nsk" && objLink.id != "circle_nau" && objLink.id != 'circle_nahod') {
                 coordinateX -= (parseFloat(objLink.getBoundingClientRect()
-                    .width) / 2) * coeffX;
+                    .width) / 2 + 20) * coeffX;
                 coordinateY -= 55 * coeffX;
             }
-            if (objLink.id == "circle_nsk" || objLink.id == "circle_nau" || objLink.id == 'circle_nahod') {
+            if (objLink.id == "circle_nau" || objLink.id == 'circle_nahod') {
                 coordinateX -= (parseFloat(objLink.getBoundingClientRect()
-                    .width) / 2) * coeffX;
+                    .width) / 2 + 20) * coeffX;
+                coordinateY += 6 * coeffX;
+            }
+            if (objLink.id == "circle_nsk") {
+                coordinateX -= (parseFloat(objLink.getBoundingClientRect()
+                    .width) / 2 + 40) * coeffX;
                 coordinateY += 6 * coeffX;
             }
             if (objLink.classList.contains("map__sityChina")) {

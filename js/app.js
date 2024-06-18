@@ -435,6 +435,11 @@ function LinckMapInit() {
                     .width) / 2 + 40) * coeffX;
                 coordinateY += 6 * coeffX;
             }
+            if (objLink.id == "circle_krsnd") {
+                coordinateX -= (parseFloat(objLink.getBoundingClientRect()
+                    .width) / 2 - 120) * coeffX;
+                coordinateY += -6 * coeffX;
+            }
             if (objLink.classList.contains("map__sityChina")) {
                 coordinateX -= (parseFloat(objLink.getBoundingClientRect()
                     .width) - 0) * coeffX;

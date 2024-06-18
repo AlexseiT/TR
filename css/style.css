@@ -1923,7 +1923,7 @@ textarea:focus-visible {
 
 @media (max-width: 1200.98px) {
     html {
-        zoom: inherit;
+        zoom: 100%;
     }
 
     .section {

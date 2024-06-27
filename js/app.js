@@ -980,7 +980,7 @@ function InitCircleContainer() {
             if (obj.classList.contains("obj1")) {
                 coordinateX -= (parseFloat(objLink.getBoundingClientRect()
                     .width) - parseFloat(objLink.getBoundingClientRect()
-                    .width) / 8) * coeffX;
+                    .width) / 10) * coeffX;
                 coordinateY -= (17) * coeffX;
             }
             if (obj.classList.contains("obj2")) {

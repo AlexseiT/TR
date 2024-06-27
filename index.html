@@ -10,7 +10,9 @@
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="static/uikit-3.16.24.min.css?_v=20240618133840">
     <link rel="stylesheet" href="css/style.css?_v=20240618133840">
-
+    
+    <!--<script src="https://api-maps.yandex.ru/v3/?apikey=a814767b-9ac1-4885-b50e-23ea98324ad8&lang=ru_RU&_v=20240627190140"></script>-->
+    <script src="https://api-maps.yandex.ru/2.1-dev/?apikey=a814767b-9ac1-4885-b50e-23ea98324ad8&lang=ru_RU&_v=20240627190140" type="text/javascript"></script>
     <title>SITE</title>
 </head>
 
@@ -24,11 +26,11 @@
             <div class="header__menu">
                 <ul class="text_min header__menu-list">
                     <li class="link header__menu-link"><a href="/TR/">Главная</a></li>
-                    <li class="link header__menu-link"><a href="/TR/404.html">О компании</a></li>
-                    <li class="link header__menu-link"><a href="/TR/404.html">Услуги</a></li>
-                    <li class="link header__menu-link"><a href="/TR/404.html">Тарифы</a></li>
-                    <li class="link header__menu-link"><a href="/TR/404.html">Справочники</a></li>
-                    <li class="link header__menu-link"><a href="/TR/404.html">Контакты</a></li>
+                    <li class="link header__menu-link"><a href="/TR/transport.html">О компании</a></li>
+                    <li class="link header__menu-link"><a href="/TR/services.html">Услуги</a></li>
+                    <li class="link header__menu-link"><a href="/TR/single-tariff.html">Тарифы</a></li>
+                    <li class="link header__menu-link"><a href="/TR/guide.html">Справочники</a></li>
+                    <li class="link header__menu-link"><a href="/TR/contacts.html">Контакты</a></li>
                 </ul>
             </div>
             <div class="text_min header__buttons">
@@ -45,12 +47,12 @@
     </header>
     <div id="header__burger-menu" class="header__menu burger__menu" uk-modal-full uk-modal>
         <ul class="text_min header__menu-list burger__menu-list">
-            <li class="link header__menu-link"><a href="/TR/404.html">Главная</a></li>
-            <li class="link header__menu-link"><a href="/TR/404.html">О компании</a></li>
-            <li class="link header__menu-link"><a href="/TR/404.html">Услуги</a></li>
-            <li class="link header__menu-link"><a href="/TR/404.html">Тарифы</a></li>
-            <li class="link header__menu-link"><a href="/TR/404.html">Справочники</a></li>
-            <li class="link header__menu-link"><a href="/TR/404.html">Контакты</a></li>
+            <li class="link header__menu-link"><a href="/TR/">Главная</a></li>
+            <li class="link header__menu-link"><a href="/TR/transport.html">О компании</a></li>
+            <li class="link header__menu-link"><a href="/TR/services.html">Услуги</a></li>
+            <li class="link header__menu-link"><a href="/TR/single-tariff.html">Тарифы</a></li>
+            <li class="link header__menu-link"><a href="/TR/guide.html">Справочники</a></li>
+            <li class="link header__menu-link"><a href="/TR/contacts.html">Контакты</a></li>
         </ul>
         <div class="text_min header__burger-menu-column">
             <a href="tel:+78001012832" class="button header__button mobile">8 (800) 101-28-32</a>
@@ -66,7 +68,7 @@
                 <span class="text_standart hero__text">Одна из крупнейших транспортно-логистических <br>компаний в России</span>
                 <div class="hero__buttons">
                     <a href="#" class="text_small button button__accent" uk-toggle="target: #formRequest">Расчитать стоимость</a>
-                    <a href="/TR/404.html" class="text_small button button__standart">Контейнерные перевозки<img src="images/min-arrow.svg" class="button__arrow" alt=""></a>
+                    <a href="/TR/services.html" class="text_small button button__standart">Контейнерные перевозки<img src="images/min-arrow.svg" class="button__arrow" alt=""></a>
                 </div>
             </div>
             <img class="hero__object-container" src="images/container.png">
@@ -95,7 +97,7 @@
                             <div class="delivery-block__slide_default">
                                 <div class="delivery-block__slide-up">
                                     <img class="delivery-block__icon uk-preserve" src="images/icons/d1.png">
-                                    <a href="/TR/404.html" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
+                                    <a uk-toggle="target: #formRequest" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
                                 </div>
                                 <div class="delivery-block__slide-down">
                                     <h3 class="text_standart delivery-block__slide-title">Импортные и экспортные контейнерные перевозки</h3>
@@ -108,7 +110,7 @@
                             <div class="delivery-block__slide_default">
                                 <div class="delivery-block__slide-up">
                                     <img class="delivery-block__icon uk-preserve" src="images/icons/d2.png">
-                                    <a href="/TR/404.html" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
+                                    <a uk-toggle="target: #formRequest" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
                                 </div>
                                 <div class="delivery-block__slide-down">
                                     <h3 class="text_standart delivery-block__slide-title">Контейнерные перевозки по России и Китаю ж/д и авто транспортом</h3>
@@ -121,7 +123,7 @@
                             <div class="delivery-block__slide_default">
                                 <div class="delivery-block__slide-up">
                                     <img class="delivery-block__icon uk-preserve" src="images/icons/d3.png">
-                                    <a href="/TR/404.html" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
+                                    <a uk-toggle="target: #formRequest" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
                                 </div>
                                 <div class="delivery-block__slide-down">
                                     <h3 class="text_standart delivery-block__slide-title">Доставку грузов из разных стран</h3>
@@ -333,7 +335,7 @@
                             <div class="delivery-block__slide_green">
                                 <div class="delivery-block__slide-up">
                                     <img class="delivery-block__icon" src="images/icons/ship-icon.png">
-                                    <a href="/TR/404.html" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
+                                    <a href="/TR/single-tariff.html" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
                                 </div>
                                 <div class="delivery-block__slide-down">
                                     <h3 class="text_standart delivery-block__slide-title">Тарифы на морские перевозки</h3>
@@ -345,7 +347,7 @@
                             <div class="delivery-block__slide_green">
                                 <div class="delivery-block__slide-up">
                                     <img class="delivery-block__icon" src="images/icons/auto-icon.png">
-                                    <a href="/TR/404.html" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
+                                    <a href="/TR/single-tariff.html" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
                                 </div>
                                 <div class="delivery-block__slide-down">
                                     <h3 class="text_standart delivery-block__slide-title">Тариф автомобильным транспортом</h3>
@@ -357,7 +359,7 @@
                             <div class="delivery-block__slide_green">
                                 <div class="delivery-block__slide-up">
                                     <img class="delivery-block__icon" src="images/icons/auto-icon.png">
-                                    <a href="/TR/404.html" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
+                                    <a href="/TR/single-tariff.html" class="delivery-block__arrow-button"><img class="delivery-block__arrow-icon" src="images/icons/arrow-type-1.svg" uk-svg></a>
                                 </div>
                                 <div class="delivery-block__slide-down">
                                     <h3 class="text_standart delivery-block__slide-title">Транспортно-экспедиционные услуги</h3>
@@ -418,29 +420,29 @@
                 <div class="guides__block-row">
                     <div class="guides__card">
                         <span class="text_standart guides__card-title">ЖЕЛЕЗНОДОРОЖНЫЕ <br>ГРУЗЫ ЕТСНГ</span>
-                        <a href="/TR/404.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
+                        <a href="/TR/guide.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
                     </div>
                     <div class="guides__card">
                         <span class="text_standart guides__card-title">ЖЕЛЕЗНОДОРОЖНЫЕ <br>ГРУЗЫ ГНГ</span>
-                        <a href="/TR/404.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
+                        <a href="/TR/guide.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
                     </div>
                     <div class="guides__card">
                         <span class="text_standart guides__card-title">ЖЕЛЕЗНОДОРОЖНЫЕ <br>СТАНЦИИ</span>
-                        <a href="/TR/404.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
+                        <a href="/TR/guide.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
                     </div>
                     <div class="guides__card">
                         <span class="text_standart guides__card-title">РАСЧЕТ РАССТОЯНИЯ <br>МАРШРУТА</span>
-                        <a href="/TR/404.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
+                        <a href="/TR/guide.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
                     </div>
                 </div>
                 <div class="guides__block-row">
                     <div class="guides__card">
                         <span class="text_standart guides__card-title">характеристики <br>контейнеров</span>
-                        <a href="/TR/404.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
+                        <a href="/TR/guide.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
                     </div>
                     <div class="guides__card">
                         <span class="text_standart guides__card-title">КАРТЫ ЖЕЛЕЗНЫХ <br>ДОРОГ</span>
-                        <a href="/TR/404.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
+                        <a href="/TR/guide.html" class="guides__card-link"><img class="guides__card-link-icon" src="images/icons/arrow-right-white.svg" uk-svg></a>
                     </div>
                 </div>
             </div>
@@ -481,33 +483,33 @@
                         <span class="footer__column-title">МЕНЮ</span>
                         <div class="footer__column-content">
                             <a href="/TR/" class="footer__column-text footer__column-link">ГЛАВНАЯ</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">О КОМПАНИИ</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">УСЛУГИ</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">ТАРИФЫ</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">СПРАВОЧНИК</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">КОНТАКТЫ</a>
+                            <a href="/TR/transport.html" class="footer__column-text footer__column-link">О КОМПАНИИ</a>
+                            <a href="/TR/services.html" class="footer__column-text footer__column-link">УСЛУГИ</a>
+                            <a href="/TR/single-tariff.html" class="footer__column-text footer__column-link">ТАРИФЫ</a>
+                            <a href="/TR/guide.html" class="footer__column-text footer__column-link">СПРАВОЧНИК</a>
+                            <a href="/TR/contacts.html" class="footer__column-text footer__column-link">КОНТАКТЫ</a>
                         </div>
                     </div>
 
                     <div class="text_min footer__column">
                         <span class="footer__column-title">УСЛУГИ</span>
                         <div class="footer__column-content">
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">перевозка опасных грузов</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">ЖД перевозки</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">АВТОперевозки</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">перевозка сыпучих <br>грузов</a>
+                            <a href="/TR/services.html" class="footer__column-text footer__column-link">перевозка опасных грузов</a>
+                            <a href="/TR/services.html" class="footer__column-text footer__column-link">ЖД перевозки</a>
+                            <a href="/TR/services.html" class="footer__column-text footer__column-link">АВТОперевозки</a>
+                            <a href="/TR/services.html" class="footer__column-text footer__column-link">перевозка сыпучих <br>грузов</a>
                         </div>
                     </div>
 
                     <div class="text_min footer__column">
                         <span class="footer__column-title">Справочники</span>
                         <div class="footer__column-content">
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">ЖЕЛЕЗНОДОРОЖНЫЕ ГРУЗЫ ЕТСНГ</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">ЖЕЛЕЗНОДОРОЖНЫЕ ГРУЗЫ ГНГ</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">ЖЕЛЕЗНОДОРОЖНЫЕ СТАНЦИИ</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">РАСЧЕТ РАССТОЯНИЯ МАРШРУТА</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">Характеристики контейнеров</a>
-                            <a href="/TR/404.html" class="footer__column-text footer__column-link">КАРТЫ ЖЕЛЕЗНЫХ ДОРОГ</a>
+                            <a href="/TR/guide.html" class="footer__column-text footer__column-link">ЖЕЛЕЗНОДОРОЖНЫЕ ГРУЗЫ ЕТСНГ</a>
+                            <a href="/TR/guide.html" class="footer__column-text footer__column-link">ЖЕЛЕЗНОДОРОЖНЫЕ ГРУЗЫ ГНГ</a>
+                            <a href="/TR/guide.html" class="footer__column-text footer__column-link">ЖЕЛЕЗНОДОРОЖНЫЕ СТАНЦИИ</a>
+                            <a href="/TR/guide.html" class="footer__column-text footer__column-link">РАСЧЕТ РАССТОЯНИЯ МАРШРУТА</a>
+                            <a href="/TR/guide.html" class="footer__column-text footer__column-link">Характеристики контейнеров</a>
+                            <a href="/TR/guide.html" class="footer__column-text footer__column-link">КАРТЫ ЖЕЛЕЗНЫХ ДОРОГ</a>
                         </div>
                     </div>
                 </div>
@@ -530,35 +532,37 @@
 
     <div id="formRequest" class="modal-request uk-flex-top" uk-modal>
         <div class="uk-margin-auto-vertical uk-modal-body uk-modal-dialog">
-            <h2 class="text_large uk-modal-title">Оставить заявку</h2>
-            <button class="text_small button button__accent uk-modal-close" type="button">x</button>
+            <h2 class="modal__title text_large uk-modal-title">Заполните форму <br>обратной связи</h2>
+            <span class="text_standart modal__text">Наши менеджеры свяжутся <br>с вами в течении 15 минут!</span>
+            <button class="button button__accent text_small uk-modal-close" type="button"></button>
             <form class="modal-form">
-                <input type="text" name="name" class="text_small modal-form__input" placeholder="Имя" required>
-                <input type="tel" name="phone" class="text_small modal-form__input" placeholder="+7 999 999 99-99" required>
-                <button type="submit" class="text_small button button__accent button-form" uk-toggle="target: #formRequest">Отправить</button>
+                <input type="text" name="name" class="text_small modal-form__input" placeholder="Ваше имя" required>
+                <input type="email" name="email" class="text_small modal-form__input" placeholder="Ваш e-mail" required>
+                <input type="tel" name="phone" e class="text_small modal-form__input" placeholder="Ваш телефон" required>
+                <button type="submit" class="button button__accent text_small button-form" uk-toggle="target: #formRequest">Отправить</button>
             </form>
         </div>
     </div>
-
     <!-- UIkit JS -->
-    <script src="static/uikit-3.16.24.min.js?_v=20240618133840"></script>
-    <script src="static/uikit-icons-3.16.24.min.js?_v=20240618133840"></script>
+    <script src="static/uikit-3.16.24.min.js?_v=20240627190140"></script>
+    <script src="static/uikit-icons-3.16.24.min.js?_v=20240627190140"></script>
 
     <!-- Anime JS -->
-    <script src="js/anime.js?_v=20240618133840"></script>
+    <script src="js/anime.js?_v=20240627190140"></script>
 
 
     <!-- Imask JS -->
-    <script src="static/imask-7.5.0.min.js?_v=20240618133840"></script>
+    <script src="static/imask-7.5.0.min.js?_v=20240627190140"></script>
 
     <!-- Tippy JS -->
-    <script src="https://unpkg.com/@popperjs/core@2?_v=20240618133840"></script>
-    <script src="https://unpkg.com/tippy.js@6?_v=20240618133840"></script>
+    <script src="https://unpkg.com/@popperjs/core@2?_v=20240627190140"></script>
+    <script src="https://unpkg.com/tippy.js@6?_v=20240627190140"></script>
     <!-- Particles JS -->
-    <script src="js/TweenMax.js?_v=20240618133840" type="module"></script>
+    <script src="js/TweenMax.js?_v=20240627190140" type="module"></script>
     <!-- Particles JS -->
-    <script src="static/particles.min.js?_v=20240618133840"></script>
-    <script src="js/app.js?_v=20240618133840" type="module"></script>
+    <script src="static/particles.min.js?_v=20240627190140"></script>
+    <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20240627190140" type="text/javascript"></script>-->
+    <script src="js/app.js?_v=20240627190140" type="module"></script>
 </body>
 
 </html>
